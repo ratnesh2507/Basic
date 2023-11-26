@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My HTML Page</title>
+        <!--this is a ruleset-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript">
+    function hello(){
+        var welcome="Hello";
+        alert(welcome);
+    }
+    hello();
+    function product(a,b){
+        var product=a*b;
+        alert(product);
+        if(product>7){
+            alert("Product is greater than 7");
+        }
+        else{
+            alert("Product is smaller than 7");
+        }
+    }
+    product(6,9);
+    var automobile={
+        getModel: function(){
+            return this.model;
+        }
+    }
+    var van=Object.create(automobile);
+        van.model="Hyundai Creta";
+    alert(van.getModel());
+        </script>
+        <style type="text/css">
+            h1{
+                color: indianred;
+                font: small-caption;
+                font-size: x-large;
+            }
+            p{
+                color: black;
+                background-color: bisque;
+                font: 300;
+            }
+
+        </style>
+    </head>
+    <body style="background-color:rgb(255, 255, 255);">
+        <div>
+            <h1>Heading 1 Largest heading</h1> <!--largest header-->
+            <h1 style="color: royalblue;background-color: black;">Inline CSS Rules</h1>
+            <h2>Heading 2 thoda chota hai bro</h2>
+            <h3>Heading 3 usse bhi chota hai bhai</h3>
+            <p id="p1" style="color: red;">absaias ssndasdkasda kslnalnksfja faajsndlasd
+                dsanjdksajdbajcbaksjasjda
+            </p> <!--paragraph tag-->
+            <p> New paragraph</p>
+            <a href="https://www.google.co.in/" target="_blank">Go to google</a>
+        </div>
+        <div>
+            <ul>
+                <li>Trigger</li>
+                <li>Jerry</li>
+            </ul>
+        </div>
+        </div>
+    </body>
+    <footer style="margin: 20px;background-color: chocolate;color: white;">
+        <marquee width="100%" direction="left" height="20px">
+            This is a sample website for my homies.
+        </marquee>
+    </footer>
+</html>
